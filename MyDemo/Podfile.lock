@@ -1,0 +1,19 @@
+PODS:
+  - GCDWebServer/Core (3.3.1)
+  - GCDWebServer/WebDAV (3.3.1):
+    - GCDWebServer/WebDAV/Core (= 3.3.1)
+  - GCDWebServer/WebDAV/Core (3.3.1):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.3.1):
+    - GCDWebServer/WebUploader/Core (= 3.3.1)
+  - GCDWebServer/WebUploader/Core (3.3.1):
+    - GCDWebServer/Core
+
+DEPENDENCIES:
+  - GCDWebServer/WebDAV (~> 3.0)
+  - GCDWebServer/WebUploader (~> 3.0)
+
+SPEC CHECKSUMS:
+  GCDWebServer: 852ed5c1056df2f1ab3b32ec54a81d9730bd227f
+
+COCOAPODS: 0.39.0
