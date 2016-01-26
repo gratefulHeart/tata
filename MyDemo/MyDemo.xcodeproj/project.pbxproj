@@ -12,6 +12,7 @@
 		C6B646D11C5736DE007109AB /* PDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CA1C5736DE007109AB /* PDFPageView.m */; };
 		C6B646D21C5736DE007109AB /* PDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CC1C5736DE007109AB /* PDFReaderViewController.m */; };
 		C6B646D31C5736DE007109AB /* PDFTiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CE1C5736DE007109AB /* PDFTiledLayer.m */; };
+		C6B646D81C573D0D007109AB /* MyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646D71C573D0D007109AB /* MyNavigationViewController.m */; };
 		C6B6DD151C4F2A3A0068F4D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD141C4F2A3A0068F4D5 /* main.m */; };
 		C6B6DD181C4F2A3A0068F4D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD171C4F2A3A0068F4D5 /* AppDelegate.m */; };
 		C6B6DD1B1C4F2A3A0068F4D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD1A1C4F2A3A0068F4D5 /* ViewController.m */; };
@@ -105,6 +106,9 @@
 		C6B646CC1C5736DE007109AB /* PDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFReaderViewController.m; sourceTree = "<group>"; };
 		C6B646CD1C5736DE007109AB /* PDFTiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFTiledLayer.h; sourceTree = "<group>"; };
 		C6B646CE1C5736DE007109AB /* PDFTiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFTiledLayer.m; sourceTree = "<group>"; };
+		C6B646D51C573CCD007109AB /* MyDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C6B646D61C573D0D007109AB /* MyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationViewController.h; sourceTree = "<group>"; };
+		C6B646D71C573D0D007109AB /* MyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationViewController.m; sourceTree = "<group>"; };
 		C6B6DD101C4F2A3A0068F4D5 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B6DD141C4F2A3A0068F4D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6B6DD161C4F2A3A0068F4D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 				C6B6DDF41C4F33DF0068F4D5 /* kxmovie */,
 				C6B6DD161C4F2A3A0068F4D5 /* AppDelegate.h */,
 				C6B6DD171C4F2A3A0068F4D5 /* AppDelegate.m */,
+				C6B646D61C573D0D007109AB /* MyNavigationViewController.h */,
+				C6B646D71C573D0D007109AB /* MyNavigationViewController.m */,
 				C6B6DD191C4F2A3A0068F4D5 /* ViewController.h */,
 				C6B6DD1A1C4F2A3A0068F4D5 /* ViewController.m */,
 				C6B6DD461C4F2B5A0068F4D5 /* SecondViewController.h */,
@@ -408,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				C6B6DD141C4F2A3A0068F4D5 /* main.m */,
+				C6B646D51C573CCD007109AB /* MyDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -883,6 +890,7 @@
 				C6B646D01C5736DE007109AB /* PDFDocumentHandler.m in Sources */,
 				C6B6DE0B1C4F33DF0068F4D5 /* KxMovieViewController.m in Sources */,
 				C6B6DE0A1C4F33DF0068F4D5 /* KxMovieGLView.m in Sources */,
+				C6B646D81C573D0D007109AB /* MyNavigationViewController.m in Sources */,
 				C6B646D11C5736DE007109AB /* PDFPageView.m in Sources */,
 				C6B646CF1C5736DE007109AB /* PDFContentView.m in Sources */,
 				C6B6DE091C4F33DF0068F4D5 /* KxMovieDecoder.m in Sources */,
@@ -1029,6 +1037,7 @@
 			baseConfigurationReference = CE9D6ACBEAFA7145DE0AC061 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemo/MyDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -1051,6 +1060,7 @@
 			baseConfigurationReference = C4693F0138D6299857A8D229 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyDemo/MyDemo-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

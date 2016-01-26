@@ -299,6 +299,10 @@
             PDFReaderViewController *pdfVC = [[PDFReaderViewController alloc]init];
             pdfVC.dataDict = ddic;
             
+//            UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:pdfVC];
+            
+//            [self presentViewController:pdfVC animated:YES completion:nil];
+            
             [self.navigationController pushViewController:pdfVC animated:YES];
 
         }

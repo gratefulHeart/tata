@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-88" y="-936"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--My Navigation View Controller-->
         <scene sceneID="epp-Nt-FuU">
             <objects>
-                <navigationController id="fvG-lt-3yy" sceneMemberID="viewController">
+                <navigationController id="fvG-lt-3yy" customClass="MyNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dHa-Vi-iRQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
