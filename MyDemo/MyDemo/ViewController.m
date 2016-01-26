@@ -10,6 +10,7 @@
 #import "GCDWebUploader.h"
 #import "SecondViewController.h"
 #import "KxMovieViewController.h"
+#import "PDFReaderViewController.h"
 
 @interface ViewController ()<GCDWebUploaderDelegate,UITableViewDataSource,UITableViewDelegate>
 {
@@ -36,7 +37,7 @@
     _webServer.delegate = self;
     _webServer.allowHiddenItems = YES;
     if ([_webServer start]) {
-        //        headerLabel.text = [NSString stringWithFormat:NSLocalizedString(@"GCDWebServer running locally on port %i", nil), (int)_webServer.port];
+
         shareUrl = [NSString stringWithFormat:@"在浏览器输入网址：%@",_webServer.serverURL];
         [self.myTableView reloadData];
         
@@ -68,6 +69,7 @@
         NSLog(@"fileName = = %@",filename);
         [fm removeItemAtPath:[path stringByAppendingPathComponent:filename] error:NULL];
     }
+    
     
     [self loadCacheDataNew];
     
@@ -214,6 +216,7 @@
     headerLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 40)];
     headerLabel.backgroundColor = [UIColor redColor];
     headerLabel.text = shareUrl;
+    headerLabel.font = [UIFont systemFontOfSize:13];
     headerLabel.textAlignment = NSTextAlignmentCenter;
     return headerLabel;
 }
@@ -291,8 +294,18 @@
     }
     else
     {
-        [self performSegueWithIdentifier:@"sendValue" sender:ddic];
         
+        if ([name rangeOfString:@".pdf"].location!=NSNotFound) {
+            PDFReaderViewController *pdfVC = [[PDFReaderViewController alloc]init];
+            pdfVC.dataDict = ddic;
+            
+            [self.navigationController pushViewController:pdfVC animated:YES];
+
+        }
+        else
+        {
+            [self performSegueWithIdentifier:@"sendValue" sender:ddic];
+        }
     }
     
     

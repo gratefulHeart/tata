@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6B646CF1C5736DE007109AB /* PDFContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646C61C5736DE007109AB /* PDFContentView.m */; };
+		C6B646D01C5736DE007109AB /* PDFDocumentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646C81C5736DE007109AB /* PDFDocumentHandler.m */; };
+		C6B646D11C5736DE007109AB /* PDFPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CA1C5736DE007109AB /* PDFPageView.m */; };
+		C6B646D21C5736DE007109AB /* PDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CC1C5736DE007109AB /* PDFReaderViewController.m */; };
+		C6B646D31C5736DE007109AB /* PDFTiledLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B646CE1C5736DE007109AB /* PDFTiledLayer.m */; };
 		C6B6DD151C4F2A3A0068F4D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD141C4F2A3A0068F4D5 /* main.m */; };
 		C6B6DD181C4F2A3A0068F4D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD171C4F2A3A0068F4D5 /* AppDelegate.m */; };
 		C6B6DD1B1C4F2A3A0068F4D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B6DD1A1C4F2A3A0068F4D5 /* ViewController.m */; };
@@ -90,6 +95,16 @@
 /* Begin PBXFileReference section */
 		6DF71AEDF7FEAE25CC4BC14A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4693F0138D6299857A8D229 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C6B646C51C5736DE007109AB /* PDFContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFContentView.h; sourceTree = "<group>"; };
+		C6B646C61C5736DE007109AB /* PDFContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFContentView.m; sourceTree = "<group>"; };
+		C6B646C71C5736DE007109AB /* PDFDocumentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFDocumentHandler.h; sourceTree = "<group>"; };
+		C6B646C81C5736DE007109AB /* PDFDocumentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFDocumentHandler.m; sourceTree = "<group>"; };
+		C6B646C91C5736DE007109AB /* PDFPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageView.h; sourceTree = "<group>"; };
+		C6B646CA1C5736DE007109AB /* PDFPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageView.m; sourceTree = "<group>"; };
+		C6B646CB1C5736DE007109AB /* PDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFReaderViewController.h; sourceTree = "<group>"; };
+		C6B646CC1C5736DE007109AB /* PDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFReaderViewController.m; sourceTree = "<group>"; };
+		C6B646CD1C5736DE007109AB /* PDFTiledLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFTiledLayer.h; sourceTree = "<group>"; };
+		C6B646CE1C5736DE007109AB /* PDFTiledLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFTiledLayer.m; sourceTree = "<group>"; };
 		C6B6DD101C4F2A3A0068F4D5 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B6DD141C4F2A3A0068F4D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6B6DD161C4F2A3A0068F4D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -328,6 +343,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C6B646C41C5736B1007109AB /* PdfReader */ = {
+			isa = PBXGroup;
+			children = (
+				C6B646C51C5736DE007109AB /* PDFContentView.h */,
+				C6B646C61C5736DE007109AB /* PDFContentView.m */,
+				C6B646C71C5736DE007109AB /* PDFDocumentHandler.h */,
+				C6B646C81C5736DE007109AB /* PDFDocumentHandler.m */,
+				C6B646C91C5736DE007109AB /* PDFPageView.h */,
+				C6B646CA1C5736DE007109AB /* PDFPageView.m */,
+				C6B646CB1C5736DE007109AB /* PDFReaderViewController.h */,
+				C6B646CC1C5736DE007109AB /* PDFReaderViewController.m */,
+				C6B646CD1C5736DE007109AB /* PDFTiledLayer.h */,
+				C6B646CE1C5736DE007109AB /* PDFTiledLayer.m */,
+			);
+			path = PdfReader;
+			sourceTree = "<group>";
+		};
 		C6B6DD071C4F2A3A0068F4D5 = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +385,7 @@
 		C6B6DD121C4F2A3A0068F4D5 /* MyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C6B646C41C5736B1007109AB /* PdfReader */,
 				C6B6DD871C4F33DE0068F4D5 /* FFmpeg-iOS */,
 				C6B6DDF41C4F33DF0068F4D5 /* kxmovie */,
 				C6B6DD161C4F2A3A0068F4D5 /* AppDelegate.h */,
@@ -846,9 +879,14 @@
 				C6B6DD481C4F2B5A0068F4D5 /* SecondViewController.m in Sources */,
 				C6B6DD1B1C4F2A3A0068F4D5 /* ViewController.m in Sources */,
 				C6B6DD181C4F2A3A0068F4D5 /* AppDelegate.m in Sources */,
+				C6B646D21C5736DE007109AB /* PDFReaderViewController.m in Sources */,
+				C6B646D01C5736DE007109AB /* PDFDocumentHandler.m in Sources */,
 				C6B6DE0B1C4F33DF0068F4D5 /* KxMovieViewController.m in Sources */,
 				C6B6DE0A1C4F33DF0068F4D5 /* KxMovieGLView.m in Sources */,
+				C6B646D11C5736DE007109AB /* PDFPageView.m in Sources */,
+				C6B646CF1C5736DE007109AB /* PDFContentView.m in Sources */,
 				C6B6DE091C4F33DF0068F4D5 /* KxMovieDecoder.m in Sources */,
+				C6B646D31C5736DE007109AB /* PDFTiledLayer.m in Sources */,
 				C6B6DD151C4F2A3A0068F4D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
