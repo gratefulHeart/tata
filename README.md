@@ -19,3 +19,5 @@
 ](https://github.com/kolyvan/kxmovie ) 的kxmovie
 .  和  [swisspol/GCDWebServer
 ](https://github.com/swisspol/GCDWebServer ) 的GCDWebServer.感谢！
+
+还有好多问题 好多不方便之处，会持续修改！
